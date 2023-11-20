@@ -4,6 +4,10 @@
 
 Numcha is a simple and customizable CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) system designed to verify that the user interacting with a web application is a human and not a bot. It utilizes image rotation as a challenge for the user to solve.
 
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/551050418541821992/1176259452786180127/lg.png?ex=656e37fb&is=655bc2fb&hm=9a6f3d9e1548cac5a5cf603b123704d52ed194c2f5846d496f57dea1b713ae74&" alt="AirBnB Clone Logo" width="200">
+</p>
+
 ## Features
 
 - **Image Rotation Challenge:** Users are presented with an image that needs to be rotated to the correct orientation.
