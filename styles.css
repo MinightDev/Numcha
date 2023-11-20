@@ -1,0 +1,201 @@
+:root {
+    --button-bg-color: #b873d8; /* Define the default background color for buttons */
+    --button-hover-bg-color: #9c5abb; /* Define the background color on button hover */
+    --check-button-bg-color: rgba(180, 171, 182, 0.421); /* Define the default background color for check buttons */
+    --check-button-border-color: rgba(37, 37, 37, 0.133); /* Define the default border color for check buttons */
+    --modal-rotate-button-bg-color: #63ceb0; /* Define the background color for modal rotate button */
+    --modal-rotate-button-hover-bg-color: #4ea18a; /* Define the background color on modal rotate button hover */
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    background-color: #4d4d4d;
+    margin: 0;
+    padding: 100px;
+}
+
+.brand-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.brand-links
+{
+    display: flex;
+    padding: 1px;
+    font-size: 8px;
+}
+
+.brand-links a
+{
+    color: gray;
+    text-decoration: none;
+    padding: 1px;
+    margin: 1px;
+}
+
+.captcha-container {
+    border: 1px solid rgba(0, 0, 0, 0.314) !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    max-width: 188px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.captcha-brand {
+    padding: 2px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.buttons {
+    padding: 7px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--button-bg-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.buttons:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+.check-button {
+    width: 6px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--check-button-bg-color);
+    color: var(--button-bg-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+}
+
+.check-button:hover {
+    background-color: var(check-button-bg-color);
+}
+
+.check-button.fail::before {
+    content: "\2716";
+    color: rgb(235, 93, 93);
+}
+
+.check-button.success::before {
+    content: "\2713";
+    color: rgb(30, 146, 63);
+}
+
+.check-button.loading::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 3px solid transparent;
+    border-top: 3px solid var(--button-bg-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.modal-content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 14px;
+    text-align: center;
+}
+
+.image-container {
+    padding: 20px;
+    background-color: #e3e2e2ea;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.modal-img {
+    width: 160px;
+    height: 160px;
+    transform-origin: center center;
+    transition: transform 0.5s;
+    border: 1.5px solid rgba(0, 0, 0, 0.735);
+    border-radius: 50%;
+}
+
+.modal-rotate-button {
+    padding: 7px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: var(--modal-rotate-button-bg-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-rotate-button:hover {
+    background-color: var(--modal-rotate-button-hover-bg-color);
+}
+
+#modalSubmitButton {
+    display: none;
+}
+
+.captcha-result {
+    margin-left: 5px;
+    margin-right: 2px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.captcha-label
+{
+    font-size: 12px;
+    font-weight: 600;
+}
+  
+  

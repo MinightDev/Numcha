@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numcha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--Numcha Start-->
+    
+    <div class="captcha-container">
+        <div id="startButton" class="check-button"></div>                  
+        <div id="captchaResult" class="captcha-result">I am hooman</div>
+        <div class="brand-container">
+            <img class="captcha-brand" src="logo.png" alt="numcha" draggable="false">
+            <div class="brand-links">
+                <a href="">Terms</a>
+                <a href="">About</a>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <label class="captcha-label">Rotate the image until it's correct</label>
+                <div class="image-container">
+                    <img src="" alt="CAPTCHA Image" class="modal-img" id="captchaImage" draggable="false">
+                </div>                
+                <button class="modal-rotate-button buttons">&#8635; Rotate</button>
+                <button id="modalSubmitButton" class="buttons">&#10003; Submit</button>
+            </div>
+        </div>
+    </div>
+
+<!--Numcha end-->
+    <script src="numcha.js"></script>
+</body>
+</html>
