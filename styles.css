@@ -1,10 +1,10 @@
 :root {
-    --button-bg-color: #b873d8; /* Define the default background color for buttons */
-    --button-hover-bg-color: #9c5abb; /* Define the background color on button hover */
-    --check-button-bg-color: rgba(180, 171, 182, 0.421); /* Define the default background color for check buttons */
-    --check-button-border-color: rgba(37, 37, 37, 0.133); /* Define the default border color for check buttons */
-    --modal-rotate-button-bg-color: #63ceb0; /* Define the background color for modal rotate button */
-    --modal-rotate-button-hover-bg-color: #4ea18a; /* Define the background color on modal rotate button hover */
+    --button-bg-color: #b873d8;
+    --button-hover-bg-color: #9c5abb;
+    --check-button-bg-color: rgba(180, 171, 182, 0.421);
+    --check-button-border-color: rgba(37, 37, 37, 0.133);
+    --modal-rotate-button-bg-color: #63ceb0;
+    --modal-rotate-button-hover-bg-color: #4ea18a;
 }
 
 body {
